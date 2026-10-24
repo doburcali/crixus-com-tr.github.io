@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRIXUS | Finans & Spor Dünyası</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #334155;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            background: linear-gradient(to right, #38bdf8, #34d399);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        nav a {
+            color: #94a3b8;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 5%;
+            background: radial-gradient(circle at top, #1e293b 0%, #0f172a 70%);
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #94a3b8;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 5% 50px 5%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .section-card {
+            background-color: #1e293b;
+            border-radius: 12px;
+            padding: 30px;
+            border: 1px solid #334155;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .section-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .finans-card { border-top: 4px solid #34d399; }
+        .spor-card { border-top: 4px solid #38bdf8; }
+
+        .section-card h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-card p {
+            color: #94a3b8;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .finans-badge { background-color: rgba(52, 211, 153, 0.1); color: #34d399; }
+        .spor-badge { background-color: rgba(56, 189, 248, 0.1); color: #38bdf8; }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #64748b;
+            border-top: 1px solid #334155;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">CRIXUS</div>
+        <nav>
+            <a href="#">Ana Sayfa</a>
+            <a href="#">Finans</a>
+            <a href="#">Spor</a>
+            <a href="#">İletişim</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Geleceğin Finans ve Spor Platformu</h1>
+        <p>Ekonominin nabzını tutun, spor dünyasındaki en son gelişmelerden ve analizlerden geri kalmayın. Çok yakında tam sürümümüzle yayındayız.</p>
+    </section>
+
+    <div class="container">
+        <div class="section-card finans-card">
+            <h2>📈 Finans & Ekonomi</h2>
+            <p>Küresel piyasalar, kripto para analizleri, borsa grafikleri ve kişisel finans yönetimine dair stratejiler. Paranızı doğru yönetmenin yolları burada.</p>
+            <span class="badge finans-badge">YAKINDA</span>
+        </div>
+
+        <div class="section-card spor-card">
+            <h2>⚽ Spor Dünyası</h2>
+            <p>Futbol, basketbol ve diğer tüm spor dallarından anlık gelişmeler. Kulüplerin finansal yapıları, transfer borsası ve saha içi analizler.</p>
+            <span class="badge spor-badge">YAKINDA</span>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 crixus.com.tr. Tüm Hakları Saklıdır. | Powered by GitHub Pages</p>
+    </footer>
+
+</body>
+</html>
